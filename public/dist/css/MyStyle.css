@@ -1,0 +1,35 @@
+.border{
+	border:2px solid #000;
+	line-height: 25px;
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-left: 5px;
+	width: 40px;
+	border-radius: 8px;
+}
+.form_inputfind{
+	float:right;
+	margin:5px;
+}
+
+.span-1{
+	border:2px solid #0099FF;
+	background: #0099FF;
+	color: #fff;
+}
+
+.span-2{
+	border:2px solid #0099FF;
+	color: #0099FF;
+}
+
+.span-3{
+	border:2px solid #ccc;
+	color: #ccc;
+}
+
+.span-4{
+	border:2px solid #999;
+	background: #999;
+	color: #fff;
+}

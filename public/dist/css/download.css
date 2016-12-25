@@ -1,0 +1,161 @@
+html {
+    width:100%;
+	height:100%;
+	color:#7f7f7f;
+  	font-size:625%;
+    background-color: #f7f7f7;
+	-webkit-font-smoothing:aniialiased;
+}
+body,h1,h2,h3,h4,p,ul,ol,dl,dt,dd,form,fieldset,figure {	
+    margin: 0;
+    padding: 0;	
+}
+a{color:#666} /*设置默认颜色*/
+a:link {color:none;} /*未访问颜色*/
+a:visited {color:none;} /*已访问颜色*/
+a:hover {color:none;} /*悬浮（鼠标经过）时颜色*/
+a:active {color:none;} /*点击时的颜色*/
+input[type="button"],input[type="text"],textarea,input[type="password"], input[type="submit"], input[type="reset"] {
+-webkit-appearance: none;
+outline:none;
+box-shadow: 0px 0px 0px rgba(255,255,255,0); 
+}
+ 
+*{-webkit-box-sizing:border-box;}
+body  input,body,body textarea{
+		outline:none;
+		background-color: #f7f7f7;
+		font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei UI", "Microsoft YaHei", SimHei, "\5B8B\4F53", simsun, sans-serif;
+        font-size: .16rem;
+	 
+	  src: url('font/Hiragino Sans GB W3.ttf'); 
+}
+input{
+	letter-spacing:-.1rem;
+	border:0;
+}
+ul,ol ,li{
+    list-style: outside none none;
+	
+}
+b{font-weight:normal;}
+i{font-style:normal;}
+a {
+    text-decoration: none; 
+    background:transparent;
+	outline:none;
+}
+img {
+    display: block;
+    max-width: 100%;    
+}
+.download{
+	position:fixed;
+	bottom:0;
+	width:100%;
+	height:.8rem;
+	background:rgba(255,255,255,.7);
+	overflow:hidden;
+	z-index:999;
+}
+.clozz{
+	width:8%;
+	max-width:.27rem;
+	float:left;
+	margin-left:.05rem;
+	margin-right:.05rem;
+}
+.t-icon{
+	width:27%;
+	padding:.1rem;
+	float:left;
+	max-height:.8rem;
+	max-width:.8rem;
+}
+.imddown{
+	float:left;
+	position:absolute;
+	right:.1rem;
+	top:30%;
+}
+.mid{
+	padding-top:.2rem;
+}
+.mid p{
+	color:#ec584e;
+	
+	line-height:.16rem;
+	padding-top:.04rem;
+}
+span.imddown{
+	font-size:.14rem;
+	padding:.07rem .1rem;
+	border-radius:.02rem;
+	background:#ec584e;
+	color:#fff;
+}
+
+@media screen and (min-width:200px) and (max-width:319px){
+	.clozz{
+		padding-top:.24rem;
+	}
+	.mid p{
+		font-size:.13rem;
+	}
+}
+@media screen and (min-width:320px) and (max-width:374px){
+	.clozz{
+		padding-top:.26rem;
+	}
+	.mid p{
+		font-size:.134rem;
+	}
+}
+@media screen and (min-width:375px) and (max-width:413px){
+	.clozz{
+		padding-top:.27rem;
+	}
+	.mid p{
+		font-size:.145rem;
+	}
+}
+@media screen and (min-width:414px) and (max-width:500px){
+	.clozz{
+		padding-top:.22rem;
+	}
+	.mid p{
+		font-size:.15rem;
+	}
+}
+@media screen and (min-width:500px) and (max-width:640px){
+	.clozz{
+		padding-top:.22rem;
+	}
+	.mid p{
+		font-size:.16rem;
+	}
+}
+@media screen and (min-width:640px){
+	.clozz{
+		padding-top:.25rem;
+	}
+	.mid p{
+		font-size:.16rem;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,191 @@
+@charset "utf-8";
+/*--------------------------------------------------------------------------------
+create.css 公立校排课界面
+--------------------------------------------------------------------------------*/
+
+
+.box-body .inner{
+  position: relative;
+  overflow: hidden;
+  zoom: 1;
+}
+.box-body .inner .account-info{
+  overflow: hidden;
+  zoom: 1;
+}
+.box-body .inner .account-info li{
+  float: left;
+  font-size: 16px;
+  margin-right: 20px;
+}
+.box-body .inner .lesson{
+  margin-top: 20px;
+}
+.box-body .inner .lesson .col-md-1{
+  font-size: 15px;
+  padding-top: 2px;
+}
+.box-body .inner .lesson .col-md-7 a{
+  margin-right: 15px;
+}
+
+/* = 排课表
+--------------------------------------------------------------------------------*/
+.box-body .inner .lesson .schedule{
+  margin-top: 20px;
+  overflow: hidden;
+  zoom: 1;
+}
+.box-body .inner .lesson .schedule dl{
+  float: left;
+  width: 12.5%;
+  text-align: center;
+}
+.box-body .inner .lesson .schedule dl dt{
+  height: 50px;
+  background-color: #666;
+  color: #FFF;
+  font-size: 15px;
+}
+.box-body .inner .lesson .schedule dl dt.selected{
+  background-color: #00A65A;
+  color: #FFF;
+}
+.box-body .inner .lesson .schedule dl dt.hover{
+  background-color: #c40000;
+  color: #FFF;
+}
+.box-body .inner .lesson .schedule dl dt{
+  padding-top: 4px;
+  cursor: pointer;
+}
+.box-body .inner .lesson .schedule dl dd{
+  border: 1px solid #ccc;
+  margin: 8%;
+  height: 32px;
+  line-height: 32px;
+  cursor: pointer;
+}
+.box-body .inner .lesson .schedule dl dd strong{
+  font-weight: normal;
+}
+.box-body .inner .lesson .schedule dl dd.overdue{
+  background-color: #ccc;
+}
+.box-body .inner .lesson .schedule dl dd.public-booked{
+  background-color: #86634f;
+  color: #FFF;
+  border: 1px solid #86634f;
+}
+.box-body .inner .lesson .schedule dl.first dt{
+  line-height: 50px;
+  padding-top: 0;
+}
+.box-body .inner .lesson .schedule dl.first dd{
+  margin-left: 0;
+  cursor: default;
+}
+.box-body .inner .lesson .schedule dl.end dd{
+  margin-right: 0;
+}
+.box-body .inner .lesson .schedule-list .row{
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+/* = 课程设置
+--------------------------------------------------------------------------------*/
+.scheduling{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 380px;
+  height: 500px;
+  z-index: 999;
+  overflow: auto;
+  overflow-x: hidden;
+  display: none;
+}
+.scheduling .scheduling-shade, .scheduling .loading{
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.scheduling .scheduling-shade{
+  background-color: #000;
+  opacity: 0.03;
+  filter: alpha(opacity=3);
+  display: none;
+}
+.scheduling .loading{
+  width: 32px;
+  height: 32px;
+  background: url('/operateStyle/img/loading.gif');
+  display: none;
+}
+.scheduling .box-header em{
+  float: right;
+  font-style: normal;
+  cursor: pointer;
+}
+.scheduling .form-section span{
+  position: relative;
+  left: 10px;
+  color: #c40000;
+  display: none;
+}
+.scheduling .schedule-time ul{
+  overflow: hidden;
+  zoom: 1;
+}
+.scheduling .schedule-time ul li{
+  float: left;
+  width: 22%;
+  margin: 2%;
+  text-align: center;
+  height: 32px;
+  line-height: 32px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+.scheduling .schedule-time ul li.overdue{
+  background-color: #ccc;
+}
+.scheduling .schedule-time ul li.booked{
+  background-color: #369;
+  color: #FFF;
+  border: 1px solid #369;
+}
+.scheduling .schedule-time ul li.public-booked{
+  background-color: orange;
+  color: #FFF;
+  border: 1px solid orange;
+}
+.scheduling .schedule-time ul li.seled{
+  background-color: green;
+  color: #FFF;
+  border: 1px solid green;
+}
+.scheduling .schedule-time ul li.first{
+  margin-left: 0;
+}
+.scheduling .schedule-time ul li.end{
+  margin-right: 0;
+}
+.scheduling .box-footer input{
+  margin-right: 5px;
+}
+.scheduling .box-footer strong{
+  color: #c40000;
+  font-weight: normal;
+}
+
+.shade{
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #000;
+  opacity: 0.3;
+  filter: alpha(opacity=30);
+  display: none;
+}

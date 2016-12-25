@@ -1,0 +1,20 @@
+@charset "utf-8";
+.col-xs-3 img{
+	max-width:.56rem;
+}
+.container{
+	background:#fff;
+}
+.fszs{
+	padding:.078rem 0;
+	border-bottom:1px solid #eee;
+	background:#fff;
+}
+.col-xs-3{
+	width:.7rem;
+}
+.col-xs-8{
+	height:.56rem;
+	line-height:.56rem;
+	
+}

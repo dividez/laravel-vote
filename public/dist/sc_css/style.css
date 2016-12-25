@@ -1,0 +1,2409 @@
+@charset "utf-8";
+html {
+    width:100%;
+	height:100%;
+	color:#7f7f7f;
+  	font-size:625%;
+    background-color: #f7f7f7;
+	-webkit-font-smoothing:aniialiased;
+}
+body,h1,h2,h3,h4,p,ul,ol,dl,dt,dd,form,fieldset,figure {	
+    margin: 0;
+    padding: 0;	
+}
+a{color:#666} /*设置默认颜色*/
+a:link {color:none;} /*未访问颜色*/
+a:visited {color:none;} /*已访问颜色*/
+a:hover {color:none;} /*悬浮（鼠标经过）时颜色*/
+a:active {color:none;} /*点击时的颜色*/
+input[type="button"],input[type="text"],textarea,input[type="password"], input[type="submit"], input[type="reset"] , input[type="date"] ，textarea{
+-webkit-appearance: none;
+outline:none;
+box-shadow: 0px 0px 0px rgba(255,255,255,0); 
+}
+ 
+*{-webkit-box-sizing:border-box;}
+body  input,body,body textarea{
+		outline:none;
+		background-color: #f7f7f7;
+		font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei UI", "Microsoft YaHei", SimHei, "\5B8B\4F53", simsun, sans-serif;
+        font-size: .16rem;
+		src: url('font/Hiragino Sans GB W3.ttf'); 
+}
+input{
+	letter-spacing:-.1rem;
+	border:0;
+}
+ul,ol ,li{
+    list-style: outside none none;
+	
+}
+b{font-weight:normal;}
+i{font-style:normal;}
+a {
+    text-decoration: none; 
+    background:transparent;
+	outline:none;
+}
+img {
+    display: block;
+    max-width: 100%;    
+}
+*{-webkit-tap-highlight-color:rgba(255,255,255,0);}
+
+
+#menu{ width:100%; overflow:hidden; margin:0auto;border-bottom:1px solid #eee;}
+#menu #nav {color:#555;z-index:11;display:block;width:100%;padding:0;margin:0;list-style:none;}
+#menu #nav li {float:left;width:33.2%;border: 1px solid #eee;}
+#menu #nav li:nth-child(1),#menu #nav li:nth-child(2),#menu #nav li:nth-child(3){border-left: none;border-right:none;}
+#menu #nav li a {display:block;line-height:.27rem;font-size:.17rem;text-decoration:none;padding:.08rem 0 .08rem 5px; text-align:center;}
+#menu_con{ color:#555;z-index:2;margin-top:-.02rem;width:100%; border-top:none; background: #fcfcfc;float: left;}
+.tag{ padding:.1rem;}
+.selected{background:#fcfcfc;color:#ec584e;border-bottom:1px solid #ec584e;}
+
+.hoho #menu{border-radius:.07rem;width:100%; overflow:hidden; margin:0auto;border-bottom:1px solid #eee;}
+.hoho #menu #nav {color:#555;z-index:11;display:block;width:100%;height:.45rem;padding:0;margin-top:.1rem;margin-bottom:.03rem;list-style:none;}
+.hoho #menu #nav li {width:33.2%;background:#f7f7f7;float:left;border: 1px solid #eee;}
+.hoho #menu #nav li:nth-child(1),#menu #nav li:nth-child(2),#menu #nav li:nth-child(3){border-left: none;border-right:none;}
+.hoho #menu #nav li:nth-child(1){
+	border-radius:.07rem 0 0 .07rem;
+}
+.hoho #menu #nav li:nth-child(3){
+	border-radius:0 .07rem .07rem 0;
+}
+.hoho #menu #nav li:nth-child(1),.hoho #menu #nav li:nth-child(2),.hoho #menu #nav li:nth-child(3){border-left:1px solid #eee;}
+.hoho #menu #nav li:nth-child(3){	border-right:1px solid #eee;}
+.hoho #menu #nav li a {display:block;line-height:.2rem;font-size:.145rem;text-decoration:none;padding:.08rem 0 .08rem 5px; text-align:center;}
+.hoho #menu_con{ z-index:2;margin-top:-.02rem;width:100%; border-top:none; background: #fcfcfc;float: left;}
+.hoho .tag{ padding-right:.05rem;color:#555;}
+.selectu{color:#fff;background:#ec584e;border:1px solid #ec584e;margin-top:-.01rem;}
+.hoho #menu_con figure{
+	margin-left:-.04rem;
+}
+.none {
+    display: none;
+}
+.wep{
+	color:#969696;
+}
+.slider{display:none}/*用于获取更加体验*/
+.focus span{width:.1rem;height:.1rem;margin-right:.1rem;border-radius:50%;background:#fff;font-size:0}
+.focus span.current{background:#ec584e;}
+
+.box li:nth-child(2){display:none;}
+.box li:nth-child(3){display:none;}
+
+.belo{
+	width:100%;
+	display:-webkit-box;
+	background:red;
+	
+	clear:both;
+	float:none;
+}
+.wola{
+	width:28%;
+	-webkit-box-flex:1;
+	float:left;
+	height:1rem;
+	background:blue;
+	margin-left:.1rem;
+
+}
+.bel-pic:nth-child(6){margin-right:0;}
+.wola img{
+	width:100%;
+	height:100%;
+}
+
+
+#delm{margin-bottom:0;padding-bottom:.04rem;}
+.clearfix:after {
+    content: '.';
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
+
+#header{
+    width: 100%;
+    height: 2rem;
+    background-color: #ec584e;
+}
+.cont{
+    padding:.3rem .13rem .1rem .13rem;
+}
+#header .cont span{
+    display: inline-block;
+}
+#header .cont hgroup{
+    display:inline-block;
+    float:right;
+}
+#header .cont .dot{
+    margin-top: .3rem;
+    margin-right: .08rem;
+}
+#header .cont hgroup>span{
+    float:left;
+    margin: .2rem .3rem 0.01rem 0.01rem;
+}
+#header #link{
+    width:100%;
+    height: 1rem;
+}
+#header #link ul{
+    width:100%;
+    height: 1rem;
+}
+#header #link ul li{
+    width:25%;
+    display:block;
+    float:left;
+    text-align: center;
+    line-height:1rem;
+    font-size:.25rem;
+}
+#header #link ul li a{
+    color:#fff;
+    letter-spacing: .03rem;
+}
+#list{
+    width: 100%;
+	background:#fcfcfc;
+	border-bottom:1px solid #eee;
+}
+
+
+article{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+
+}
+
+article ul{
+    width: 100%;
+    display: -webkit-box;
+}
+article ul li{
+    width: 100%;
+}
+
+
+
+article ol{
+    width: .0rem;
+    height:.16rem;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 3%;
+    right: 0;
+}
+
+article ol li{
+    float: left;
+    width: .1rem;
+    height: .1rem;
+    background: #fcfcfc;
+    border-radius: 100%;
+    margin-right: .01rem;
+    margin-top: .03rem;
+}
+
+article ol li.on{
+    background: red;
+}
+article ul li img{
+    width: 100%;
+}
+
+article ol{
+    width: .1rem;
+    height: .16rem;
+    margin: 0 auto;
+}
+.ebj{
+	width:100%;
+	height:1px;
+	border-bottom:1px dotted #ccc;
+	border-top:none;
+	
+	margin-top:.12rem
+}
+.list{
+    width:100%;
+    display:-webkit-box;
+    margin-bottom:.14rem;
+}
+.list a{
+    -webkit-box-flex: 1;
+    display:block;
+}
+.list a img{
+    width:.483rem;
+	height:.472rem;
+    margin: 0 auto;
+}
+#list .cont .list span{
+    display:block;
+    line-height: .3rem;
+    text-align:center;
+	padding-top:.04rem;
+    color:#555;
+    font-size:.13rem;
+}
+.reclaim{
+    width:90%;
+    line-height:.21rem;
+}
+.reclaim img{
+	width:.17rem;
+    display:inline-block;
+    float: left;
+    margin-right: .059rem;
+	margin-top:.07rem;
+}
+.reclaim strong{
+    font-size: .14rem;
+    color:#ec584e;
+    letter-spacing: .007rem;
+    line-height: .3rem;
+    font-weight: normal;
+}
+.lisot {
+	font-size: .18rem;
+	color: #666;
+}
+.lisot .pic{
+	padding:.09rem;
+	background:url('../sc_img/gfe_03.png') no-repeat;
+	background-size:100%;
+    float:left;
+	margin-left:.03rem;
+	overflow:hidden;
+	padding-top:.13rem;
+	max-width:1.5rem;
+	max-height:2.1rem;
+	min-width:.64rem;
+	min-height:.83rem;
+}
+#ola{
+	width:100%;
+	padding-top:.035rem;
+
+}
+.lisot .pic img{
+	width:100%;
+	height:90%;
+	margin:0 auto;
+	max-height:1.19rem;
+	margin-top:.03rem;
+}
+.lisot img.bala{
+    float:left;
+	margin-left:-.1rem;
+}
+ img.phone-bar{
+        width: 6%;
+		float:left;
+		margin-right:.07rem;
+		padding-top:.05rem;
+		max-width:.26rem;
+		margin-bottom:.15rem;
+}
+figure{
+    width: 100%;
+}
+figure>h2 {
+	padding: 0 0 .13rem 0;
+	font-weight:normal;
+}
+figure>h2 span{
+	float:right;	
+}
+figure.papic>img{
+    width:20px;
+    height:100px;
+}
+figure.papic figcaption{
+    width: 65%;
+}
+figure.pn{
+    padding: 0;
+	background:#fcfcfc;
+	border-top:2px solid #cc;
+}
+figure.pn a p{
+    width: 100%;
+    font-size: .18rem;
+    text-align: center;
+}
+figure.pn .line-wrop a:nth-child(1){
+	padding-right:.13rem;
+}
+img.sortimg{
+	float:left;
+	margin-right:.1rem;
+	max-width:.24rem;
+}
+.line-wrop{
+    width: 100%;
+	height:.54rem;
+    display:block;
+    clear: both;
+	border-bottom: 1px solid #eee;
+}
+.line-wrop a{
+    width: 48%;
+    float: left;
+    display: block;
+    position: relative;
+    font-size: .2rem;
+    padding: .12rem;
+    border-right: 1px solid #eee;
+	cursor:pointer;
+}
+.line-wrop a img{
+    width: 30%;
+    float:left;
+	max-width:.36rem;
+}
+.lisot .line-wrop a span{
+    position:absolute;
+    top: 33%;
+	color:#636363;
+	font-size:.167rem;
+}
+.about p {
+	line-height: 2;
+	margin: .2rem 0;
+}
+.about address {
+	font-style: normal;
+	line-height: 1.6;
+	margin: .2rem 0;
+}
+.information{
+	background:#f7f7f7;
+}
+.information figure:after {
+	content: '.';
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
+#rowfi{
+	padding-top:0;
+	padding-bottom:0;
+	margin-bottom:0;
+}
+.information figure figcaption:after {
+	content: '.';
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
+
+.information .wrap-cont{
+	margin-top:.09rem;
+	padding:0 .12rem 0 .2rem;
+	background:#fcfcfc;
+	border-bottom: 1px solid #eeeeee;
+    border-top: 1px solid #eeeeee;
+}
+
+.information figure {
+	width:97%;
+	position: relative;
+	padding-top:.07rem;
+    background: #fcfcfc;
+	margin-bottom:.06rem;
+	padding-bottom:.1rem;    
+}
+.lisot img.pic{
+	width:32%;
+	margin-left:.021rem;
+	margin-right:.1rem;
+}
+.lisot img.bala{
+	width:32%;
+	margin-left:.09rem;
+	margin-right:.1rem;
+}
+.information figure>h2 img.i-con{
+	display:inline-block;
+	vertical-align:middle;
+	margin-top:-5px;
+	padding-right:.08rem;
+	width:.106rem;
+    margin-left:.02rem;
+}
+.ffbw{
+
+}
+.information figure>h2{
+	letter-spacing:.003rem;
+	
+	color:#3e3e3d;
+	padding-top:.056rem;
+	font-weight:normal;
+	}
+.information figure>h2 span{
+	font-weight:normal;
+
+	color:#888;
+	padding-top:.05rem;
+	font-size:.157rem;
+}
+.information figure>p{
+	width:100%;
+	line-height:0.42rem;
+	display:inline-block;
+	border-top:1px dotted #ccc;
+	padding: 0;	
+	
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	}
+.information figure>p:first-child{
+	border-top:none;
+}
+.information figure p span.spe-icon{
+	font-size:0.17rem;
+	color:#999;
+	letter-spacing:.012rem;	
+	}
+.reg{margin:0;}
+.for figure>img {
+	width: 26%;
+	float: left;
+    padding-left: .04rem;
+}
+.for figure figcaption {
+
+	width: 72%;
+	float: right;
+    line-height: .21rem;
+    font-size: .1rem;
+    padding-top: .04rem;
+}
+.for h2{
+    color: #000;
+}
+.for h3{
+    color:#ccc;
+}
+.for figure>p{
+    width: 100%;
+    border-bottom: 1px dotted #eee;
+    border-top: none;
+    margin-bottom: .07rem;
+    padding:.04rem 0;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+}
+.information .title {
+	border: none;
+	font-weight:normal;
+	padding: .03rem 0 .05rem 0;
+	color:#3e3e3d;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	-o-text-overflow:ellipsis; 
+	-webkit-text-overflow:ellipsis;
+	-ms-text-overflow:ellipsis;
+	-webkit-line-clamp: 1;
+	letter-spacing:.005rem;
+	-webkit-box-orient: vertical;
+}
+
+.obj{
+	width:100%;
+	height:.21rem;	
+	}
+.information .small_title {
+	font-size:.175rem;
+	font-weight: normal;
+	padding: 0;	
+	color:#9696969;
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+    line-height: 0.27rem;	
+}
+figure.immg{
+	background:#fcfcfc;
+}
+figure{
+}
+.img.sortimg{
+	max-width:.22rem;
+}
+.wrape{
+	line-height:.42rem;
+	padding-left:.11rem;
+	overflow:hidden;
+}
+.icon-list{
+    width: 100%;
+    display: -webkit-box;
+    z-index: 999;
+}
+.icon-list a{
+    -webkit-box-flex:1;
+    display: block;
+    float: left;
+    background: #eee;
+}
+.icon-list a img{
+    width: 36px;
+    clear: both;
+    diaplay:inline-block;
+    margin: 0 auto;
+}
+.icon-list a span{
+    
+    text-align: center;
+    line-height: 0.12rem;
+}
+
+#book-info{
+ 
+    padding:.07rem .09rem;
+    background: #fcfcfc;
+    border-bottom: 1px solid #eee;
+    margin-bottom: .02rem;
+}
+#book-info article{
+    width: 100%;
+    clear: both;
+    float: none;
+}
+#book-info article .pic-cont{
+    width: 27%;
+    float: left;
+	margin:0 .08rem 0 .08rem;
+	background:url('../sc_img/gfe_03.png') no-repeat;
+	background-size:100%;
+}
+.bookpic{
+	max-width:1.1rem;
+}
+#book-info article .tit-text{
+    background-size:border;
+    padding-left: .1rem;
+	
+}
+#book-info article .tit-text span{
+    display: block;
+    line-height: .21rem;
+}
+#book-info article .tit-text span i{
+    font-style: normal;
+    color:#ec584e;
+	font-size:.15rem;
+	padding:0 .03rem;
+}
+#book-info article .tit-text .tit1{
+    font-size: .2rem;
+	color:#555;
+}
+#book-info article .tit-text .tit2{
+    font-size: .12rem;
+	padding-top:.02rem;
+	color:#555;
+}
+
+.list-icon {
+    width: 100%;
+    height: .63rem;
+	margin-top:.1rem;
+}
+.list-icon a{
+    width: 32%;
+    display: block;
+	text-align:center;
+	line-height:.2rem;
+    float: left;
+}
+.tip a{
+	padding:.12rem .04rem;
+	border:1px solid #b5b5b5;
+	font-size:.17rem;
+	width:50%;
+}
+.tip-red{
+	background:#ec584e;
+	border:1px solid #ec584e;
+	color:#fff;
+}
+.list-icon a img{
+    width: .28rem;
+	  height: .28rem;
+    margin: 0 auto;
+}
+.list-icon a span{
+    display: block;
+    line-height: .3rem;
+    height:.3rem;
+	font-size:.124rem;
+    overflow: hidden;
+    text-align: center;
+    padding: 0 .05rem;
+    white-space: nowrap
+}
+h2.title-tip {
+font-size:1.88rem;
+padding:.1rem  0  .15rem 0;
+font-weight:normal;
+letter-spacing:0.03rem;}
+ img.i-con{
+display: inline-block;
+vertical-align: middle;
+padding-right: .2rem;
+width: 2.5px;
+}
+h2.title-tip span.more{float:right;}
+
+.btn-wrap{
+	width:100%;
+}
+.btn-wrap ul{
+	display:-webkit-box;
+	padding:2rem 1rem;
+
+}
+.btn-wrap ul li{
+	-webkit-box-flex:1;
+	padding:10px;
+	text-align:center;
+	color:#fff;
+}
+.papic .pic-cont{
+	width:23%;
+	max-width:1rem;
+	float:left;
+}
+.pinlunp{
+	padding:0 .04rem 0 .18rem;
+}
+#bn{
+	width:100%;
+}
+
+/*综合的文件样式*/
+
+
+.bor-cont{
+width:100%;
+}
+.title_head{
+width:100%;
+height:.12rem;
+font-size:.14rem;
+}
+.title_head .l_pic{
+width:2px;
+float:left;
+margin-right:.12rem;
+}
+.text-cont{
+Width:100%;
+Padding:.14rem .09rem;
+}
+.text-cont .red-text{color:red;}
+P.gray{color:#3333;}
+h2.title-tip {
+font-size:1.88rem;
+padding:0 0 0 .15rem 0;
+font-weight:normal;
+letter-spacing:0.03rem;}
+ Img.i-con{
+display: inline-block;
+vertical-align: middle;
+padding-right: .2rem;
+width: 2.5px;
+}
+H2.title-tip span.more-pic{display:block;padding:.03rem;float:right;}
+H2.title-tip span.more-pic:nth-child(1){background:url(“img/img@2x.png”)}
+P.bor-bot{border-bottom:1px solid gray;}
+@media screen and (min-width:100px) and (max-width:210px){
+	img.pic{
+	height:1.25rem;
+}
+	.bala{
+		height:.6rem;
+	}
+	.bel-pic{
+
+		height:.1rem;
+	}
+	.box-ph{
+	
+		height:.1rem;
+	}
+	.wtit{
+	width:1.1rem;
+	}
+	.cen-pic{
+		width:50px;
+		height:50px;
+	}
+	.cent-pic img{
+		width:50px;
+		height:50px;
+		border-radius:50%;
+	}
+	.reg-name img {
+		width:.48rem;
+		position: absolute;
+		left:46%;
+		top:25%;
+	}
+	.h_m_pic {
+	 left:69%;
+	}
+	.hidimg{
+		padding-top:.17rem;
+	}
+	.regtop .fl{
+		font-size:.11rem;
+	}
+	.reg-detail{
+		font-size:.163rem;
+	}
+	.reg-btn{
+		font-size:.13rem;
+	}
+	.con{
+	height:.36rem;
+	line-height:.36rem;
+	font-size:.14rem;
+	}
+	.cen{
+		
+		height:.43rem;
+		line-height:.43rem;
+		font-size:.16rem;
+	}
+	.title span{
+		font-size:.17rem;
+		padding-top:.1rem;
+	}
+	.reg-des{
+		font-size:.13rem;
+		padding-top:.07rem;
+	}
+	.reg-name span.img {
+		width: .48rem;
+		height:.24rem;
+		background:#ffb400;
+		position: absolute;
+		left:52%;
+		top:25%;
+	}
+	.list-sign{
+		font-size:.163rem;
+	}
+	.teard{
+		font-size:.1rem;
+	}
+	.line-wrop a{
+		padding:.1rem .02rem .1rem .09rem;
+	}
+	.res{
+	font-size:.12rem;
+	}
+	.bol{
+		font-size:.16rem;
+	}
+	.lastlist{
+		font-size:.131rem;
+	}
+	.reg-section{
+		height:3.4rem;
+	}
+	img.sortimg{
+		width:.2rem;
+	}
+	.act-rule .span{
+		font-size:.13rem;
+	}
+	.lucky-head {
+		font-size:.13rem;
+	}
+	.rewards .re-right{
+		font-size:.132rem;
+	}
+	.rewards .re-left{
+		font-size:.132rem;
+	}
+	.ds-m-des{
+		font-size:.15rem;
+	}
+	.span{
+		font-size:.15rem;
+	}
+	.text-ind{
+		font-size:.17rem;
+	}
+	.rewards .re-coin{
+		font-size:.149rem;
+	}	
+	.reclaim strong{
+        font-size: .135rem;
+    }
+	.information .price strong {
+		font-size: .14rem;
+	}
+	 figcaption, #tour .info, .lisot {
+		font-size: .1rem;
+	}	
+	.information figure>h2 {
+		font-size: .19rem;
+	}
+	.information figure>p{
+		font-size: .15rem;
+	}
+    .lisot img.pic{
+    width: 33%;
+    margin-top:-.02rem;
+    margin-right: 0.1rem;
+    }
+	 .lisot img.bala{
+    width: 33%;
+    margin-top:-.02rem;
+    margin-right: 0.1rem;
+    }
+	.reclaim{
+		width:100%;
+	}
+	.ffbw{
+	height:2.1rem;
+	}
+	.information .title{
+		font-size:.19rem;
+	}
+	#adior{
+		font-size:.137rem;
+		line-height:.19rem;
+
+	}
+	.information .small_title{
+		line-height:.17rem;
+		font-size:.13rem;
+	}
+	.for figure figcaption{
+		padding-top:0;
+		font-size:.14rem;
+	}
+	.my_wrep h3{
+	text-align: center;
+	font-size: .12rem;
+	line-height: .18rem;
+	color: #fff;
+	font-weight: normal;
+	}
+	}
+@media screen and (min-width:209px) and (max-width:316px){
+	img.pic{
+	height:1.22rem;
+}
+		.book_r_box dl dd{
+		color:#8c8c8c;
+		font-size:.135rem;
+		padding:.024rem 0;
+	}
+	.bala{
+		height:1rem;
+	}
+	.bel-pic{
+		height:.83rem;
+	}
+	#ola{
+		height:.79rem;
+	}
+	.box-ph{
+		height:.83rem;
+	}
+	.ffbw{
+		height:2.2rem;
+	}
+		.wtit{
+	width:1.2rem;
+	}
+	.box-inda{
+		height:1.7rem;
+		overflow:hidden;
+	}
+	.h_m_pic {
+		left:69%;
+	}
+	.hidimg{
+		padding-top:.17rem;
+	}
+	.regtop .fl{
+		font-size:.118rem;
+	}
+	.reg-detail{
+		font-size:.164rem;
+	}
+	.reg-btn{
+		font-size:.16rem;
+	}
+	.reg-name img {
+		width:.48rem;
+		position: absolute;
+		left:46%;
+		top:25%;
+	}
+	.title span{
+		font-size:.17rem;
+		padding-top:.132rem;
+	}
+	.reg-des{
+		font-size:.13rem;
+	
+	}
+	.list-sign{
+		font-size:.175rem;
+	}
+	img.pic{
+		max-width:1.3rem;
+	}
+	img.bala{
+		max-width:1.3rem;
+	}
+	.teard{
+		font-size:.11rem;
+	}
+	.res{
+	font-size:.12rem;
+	}
+	.bol{
+		font-size:.16rem;
+	}
+	.lastlist{
+		font-size:.126rem;
+	}
+	.reg-section{
+		height:3rem;
+	}
+	img.sortimg{
+		width:.19rem;
+	}
+	.act-rule .span{
+		font-size:.137rem;
+	}
+	.lucky-head {
+		font-size:.13rem;
+	}
+	.rewards .re-right{
+		font-size:.14rem;
+	}
+	.rewards .re-left{
+		font-size:.14rem;
+	}
+	.ds-m-des{
+		font-size:.158rem;
+	}
+	.span{
+		font-size:.15rem;
+	}
+	.text-ind{
+		font-size:.178rem;
+	}
+	.rewards .re-coin{
+		font-size:.16rem;
+	}
+	.crosline span{
+	position:absolute;
+	top:-13px;
+	left:-9%;
+	}
+	.act-fun ul li:first-child{
+		margin-left:.1rem;
+	}
+	.act-fun ul li span{
+		margin-left:.03rem;
+	}
+	.act-fun ul li img{
+		margin-right:.01rem;
+	}
+	.lisot .line-wrop a span{
+		left:47%;
+	}
+	.line-wrop a img{
+		margin-left:.15rem;
+	}
+	figure>h2 {
+		font-size: .17rem;
+	}
+	figure>p{
+		font-size: .11rem;
+	}
+	.emosha span{
+		font-size:.13rem;
+		margin-left:.01rem;
+	}
+	.lop{
+		margin-top:.-1rem;
+	}
+	.swiper-container{
+		
+		overflow:hidden;
+	}
+	.information .title {
+    font-size: .168rem;
+    padding-bottom: .03rem;
+    }
+	.information .small_title {
+    line-height: .16rem;
+    font-size: .145rem;
+}
+	.my_wrep .my_pic{
+	
+	padding-top: .07rem;
+	}
+	.my_wrep h3{
+		font-size: .12rem;
+	}
+	.line-wrop a{
+		padding:.1rem .02rem .1rem .09rem;
+	}
+	.icon-more img{
+		width:.16rem;
+	}
+	.act-fun ul li{
+	width:24%;
+	float:left;
+	font-size:.11rem;
+	}
+}	
+@media screen and (min-width:315px) and (max-width:373px){
+	img.pic{
+	height:1.25rem;
+}
+	.bala{
+		height:1.2rem;
+	}
+	.bel-pic{
+		height:1rem;
+	}
+	.box-ph{
+		height:1.4rem;
+	}
+	.wtit{
+	width:1.26rem;
+	}
+	.h_m_pic {
+		left:65%;
+	}
+	.hidimg{
+		padding-top:.17rem;
+	}
+	.regtop .fl{
+		font-size:.119rem;
+	}
+	.reg-detail{
+		font-size:.16rem;
+	}
+	.reg-btn{
+		font-size:.16rem;
+	}
+	.con{
+		height:.4rem;
+		line-height:.4rem;
+		font-size:.13rem;
+	}
+	.cen{
+		
+		height:.5rem;
+		line-height:.5rem;
+		font-size:.16rem;
+	}
+	.title span{
+		font-size:.18rem;
+		padding-top:.06rem;
+	}
+	.reg-des{
+		font-size:.15rem;
+	
+	}
+	.reg-name img {
+		width:.48rem;
+		position: absolute;
+		left:46%;
+		top:25%;
+	}
+	.list-sign{
+		font-size:.16rem;
+	}
+	.teard{
+		font-size:.11rem;
+	}
+	.res{
+	font-size:.125rem;
+	}
+	.bol{
+		font-size:.16rem;
+	}
+	.lastlist{
+		font-size:.132rem;
+	}
+	.reg-section{
+		height:4rem;
+	}
+	img.sortimg{
+		width:.19rem;
+	}
+	.act-rule .span{
+		font-size:.134rem;
+	}
+	.lucky-head {
+		font-size:.13rem;
+	}
+	.rewards .re-right{
+		font-size:.132rem;
+	}
+	.rewards .re-left{
+		font-size:.132rem;
+	}
+	.ds-m-des{
+			font-size:.155rem;
+		}	
+	.span{
+			font-size:.15rem;
+		}
+	.text-ind{
+			font-size:.175rem;
+		}
+	.rewards .re-coin{
+			font-size:.157rem;
+		}
+	#btn-login{
+	font-size:.168rem;
+	}
+	.act-fun ul li span{
+		margin-left:.1rem;
+		margin-right:.1rem;
+	}
+	.act-fun ul li img{
+		margin-left:.04rem;
+		margin-right:.04rem;
+	}
+	.line-wrop a{
+		padding:.1rem .02rem .1rem .09rem;
+	}
+	.book_r_box dl dd{
+		color:#8c8c8c;
+		font-size:.135rem;
+		padding:.032rem 0;
+		
+	}
+	.box-inda{
+		height:1.68rem;
+		overflow:hidden;
+	}
+	.niki-button{
+		font-size:.2rem;
+	}
+	.reclaim strong{
+        font-size: .139rem;
+    }	 
+	.information .price strong{
+		font-size: .14rem;
+	}
+	 figcaption, #tour .info, .lisot {
+		font-size: .1rem;
+	}	
+	.information figure>h2 {
+		font-size: .182rem;
+	}
+	
+	.information figure>p{
+		font-size: .15rem;
+	}
+    .lisot img.pic{
+    width: 33%;
+   margin-top:-.02rem;
+    margin-right: 0.1rem;
+    }
+	.lisot img.bala{
+    width: 33%;
+   margin-top:-.02rem;
+    margin-right: 0.1rem;
+    }
+	.reclaim{
+		width:100%;
+		font-size:.151rem;
+	}
+	.ffbw{
+	height:2.1rem;
+}
+	.information .title{
+		font-size:.17rem;
+		padding-bottom:.01rem;
+	}
+	#adior{
+		line-height:.21rem;
+		font-size:.148rem;
+		
+	}
+	.information .small_title{
+		line-height:.18rem;
+		font-size:.145rem;
+	}
+	.for figure figcaption{
+		padding-top:0;
+		font-size:.14rem;
+	}
+	.line-wrop a:fist-child{
+	padding-right:.18rem;
+	}
+	.line-wrop{
+		overflow:hidden;
+	}
+	.my_wrep h3{
+	text-align: center;
+	font-size: .12rem;
+	line-height: .18rem;
+	color: #fff;
+	font-weight: normal;
+	}
+	.emosha span{
+		font-size:.149rem;
+	}
+	#book-info article .tit-text .tit1{
+		font-size:.16rem;
+	}
+	.pin-h3{
+		font-size:.14rem;
+	}
+	.pin-h3 span{
+		font-size:.14rem;
+	}
+	.ds-data{
+		font-size:.14rem;
+	}
+	.ds-text{
+		font-size:.14rem;
+	}
+	.ds-data{
+		font-size:.14rem;
+	}
+	.lisot .line-wrop a span{
+		font-size:.14rem;
+		left:37%;
+	}
+	
+	.icon-more img{
+		width:.16rem;
+	}
+	
+	.ind {
+		font-size:.175rem;
+	}
+	}
+	
+@media screen and (min-width:373px) and (max-width:413px){
+	img.pic{
+	height:1.34rem;
+}
+	.bala{
+		height:1.39rem;
+	}
+	.bel-pic{
+		height:1.22rem;
+	}
+	.box-ph{
+		height:1.22rem;
+	}
+	.wtit{
+	    width:1.4rem;
+	}
+	.h_m_pic {
+		left:65%;
+	}
+	.hidimg{
+		padding-top:.16rem;
+	}
+	.acttop{
+		margin-left:.05rem;
+	}
+	.regtop .fl{
+		font-size:.144rem;
+	}
+	.reg-detail{
+		font-size:.178rem;
+	}
+	.reg-btn{
+		font-size:.173rem;
+	}
+	.con{
+		height:.4rem;
+		line-height:.4rem;
+		font-size:.13rem;
+	}
+	.cen{
+		
+		height:.55rem;
+		line-height:.55rem;
+		font-size:.16rem;
+	}
+	.reg-name span.img {
+		width:.48rem;
+		height:.50%;
+		color:#fff;
+		background:#ffb400;
+		position: absolute;
+		left:36%;
+		top:25%;
+	}
+	.title span{
+		font-size:.21rem;
+		padding-top:.1rem;
+	}
+	.reg-des{
+		font-size:.15rem;
+		padding-top:.05rem;
+	}
+	.list-sign{
+		font-size:.178rem;
+	}
+	.teard{
+		font-size:.126rem;
+	}
+	.res{
+	font-size:.138rem;
+	}
+	.bol{
+		font-size:.163rem;
+	}
+	.lastlist{
+		font-size:.138rem;
+	}
+	.reg-section{
+		height:4rem;
+	}
+	img.sortimg{
+		width:.2rem;
+	}
+	.act-rule .span{
+		font-size:.143rem;
+	}
+	.lucky-head {
+		font-size:.135rem;
+	}
+	.rewards .re-right{
+		font-size:.15rem;
+	}
+	.rewards .re-left{
+		font-size:.15rem;
+	}
+	.ds-m-des{
+		font-size:.169rem;
+	}
+	.span{
+		font-size:.15rem;
+	}
+	.text-ind{
+		font-size:.173rem;
+	}
+	.rewards .re-coin{
+		font-size:.16rem;
+	}
+	#btn-login{
+	font-size:.167rem;
+	}
+	.book_r_box dl dd{
+		color:#8c8c8c;
+		font-size:.135rem;
+		padding:.03rem 0;
+	}
+	.act-fun ul li span{
+	margin-left:.1rem;
+	float:right;
+	}
+	.act-fun ul li:first-child{
+		margin-left:.12rem;
+	}
+	.act-fun ul li img{
+		padding-top:.023rem;
+	}
+
+	.box-inda{
+		height:1.9rem;
+		overflow:hidden;
+	}
+   .niki-button{
+		font-size:.22rem;
+	}
+	.lisot .line-wrop a span{
+		left:50%;
+	}
+	.line-wrop a img{
+		margin-left:.15rem;
+	}
+	.crosline span{
+		position:absolute;
+		top:-13px;
+		left:0%;
+	}
+	.my_wrep .my_pic{		
+		padding-top: .1rem;
+		padding-bottom:.1rem;
+	}
+	.my_wrep h3{
+		font-size: .14rem;	
+	}
+   .reclaim strong{
+        font-size: .15rem;
+    }
+	.information .price strong {
+		font-size: .14rem;
+	}
+	 figcaption, #tour .info, .lisot {
+		font-size: .1rem;
+	}	
+	figure>h2 {
+		font-size: .186rem;
+	}
+	figure>p{
+		font-size: .14rem;
+	}
+    .lisot img.pic{
+    width: 32%;
+    margin-right: 0.1rem;
+    }
+	.lisot img.bala{
+    width: 32%;
+    margin-right: 0.1rem;
+    }
+	#adior{
+		line-height:.22rem;
+		font-size:.16rem;
+	}
+	.information .small_title{
+		line-height:.23rem;
+		font-size:.15rem;
+	}
+	
+	.emosha span{
+		font-size:.145rem;
+	}
+	.line-wrop{
+		height:.61rem;
+	}
+
+	.information .title{
+		font-size:.18rem;
+	}
+	
+	.icon-more img{
+		width:.16rem;
+		
+	}
+	.ind {
+	font-size:.18rem;
+	}
+	}
+@media screen and (min-width:413px) and (max-width:463px){
+	#adior{
+		margin-top:.07rem;
+	}
+	img.pic{
+	height:1.29rem;
+}
+	.bala{
+		height:1.5rem;
+	}
+	.bel-pic{
+		height:1.36rem;
+	}
+	.box-ph{
+		height:1.36rem;
+	}
+	
+	.wtit{
+	width:1.68rem;
+	}
+	.box-ph{
+		max-height:1.69rem;
+	}
+	.h_m_pic {
+		left:63%;
+	}
+	.acttop{
+		margin-left:.09rem;
+	}
+	.regtop .fl{
+		font-size:.15rem;
+	}
+	.reg-detail{
+		font-size:.19rem;
+	}
+	.reg-btn{
+		font-size:.176rem;
+	}
+	.con{
+		height:.42rem;
+		line-height:.42rem;
+		font-size:.14rem;
+	}
+	.cen{
+		
+		height:.6rem;
+		line-height:.6rem;
+		font-size:.165rem;
+	}
+	.hidimg{
+		padding-top:.13rem;
+	}
+	.reg-name img {
+		width:.48rem;
+		position: absolute;
+		left:35%;
+		top:25%;
+	}
+	.title span{
+		font-size:.23rem;
+		padding-top:.14rem;
+	}
+	.reg-des{
+		font-size:.167rem;
+		padding-top:.05rem;
+	}
+	.list-sign{
+		font-size:.179rem;
+	}
+	.teard{
+		font-size:.132rem;
+	}
+	.res{
+	font-size:.138rem;
+	}
+	.bol{
+		font-size:.156rem;
+	}
+	.lastlist{
+		font-size:.138rem;
+	}
+	.reg-section{
+		height:4rem;
+	}
+	img.sortimg{
+		width:.19rem;
+	}
+	.act-rule .span{
+		font-size:.145rem;
+	}
+	.lucky-head{
+		font-size:.135rem;
+	}
+	.rewards .re-right{
+		font-size:.154rem;
+	}
+	.rewards .re-left{
+		font-size:.154rem;
+	}
+	.ds-m-des{
+		font-size:.17rem;
+	}
+	.span{
+		font-size:.15rem;
+	}
+	.text-ind{
+		font-size:.174rem;
+	}
+	.rewards .re-coin{
+		font-size:.17rem;
+	}
+	.information figure>p{
+		font-size:.14rem;
+	}
+	#btn-login{
+	font-size:.175rem;
+	}
+	.act-fun{
+		margin-left:.1rem;
+	}
+	.rev-reg{
+		height:1.43rem;
+	}
+	.rev{
+		width:40%;
+	}
+	.li-left{
+		width:36%;
+		margin-left:.2rem;
+	}
+	.book_r_box dl dd{
+		color:#8c8c8c;
+		font-size:.15rem;
+		padding:.032rem 0;
+	}
+	.box-inda{
+		height:2.3rem;
+		overflow:hidden;
+	}
+	figure.box-inda{
+		padding-bottom:.1rem;
+	}
+	.book_r_box dl dt{
+		padding-bottom:.03rem;
+	}
+	.crosline span{
+	position:absolute;
+	top:-13px;
+	left:-2%;
+	}
+	.lisot .line-wrop a span{
+	left:49%;
+	}
+	.line-wrop a img{
+		margin-left:.2rem;
+	}
+	.niki-button{
+		font-size:.17rem;
+	}
+	.my_wrep .my_pic{
+	padding-top: .16rem;
+	}
+	.my_wrep h3{
+		font-size: .16rem;
+	}
+	.line-wrop{
+    width: 100%;
+	height:.6rem;
+    display:block;
+    clear: both;
+	border-bottom: 1px solid #eee;
+	}
+	.reclaim strong{
+        font-size: .143rem;
+    }
+	.information .price strong {
+		font-size: .11rem;
+	}
+	figcaption, #tour .info, .lisot {
+		font-size: .1rem;
+	}	
+	figure>h2 {
+		font-size: .172rem;
+	}
+	figure>p{
+		font-size: .12rem;
+	}
+    .lisot img.pic{
+    margin-right: 0.1rem;
+    }
+	.lisot img.bala{
+    margin-right: 0.1rem;
+    }
+	.information .small_title {
+	font-size:.147rem;
+	font-weight: normal;
+	padding: 0;	
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+    line-height: 0.24rem;
+	}
+	.lisot .line-wrop a span{
+		left:49%;
+	}
+	.emosha span{
+		font-size:.156rem;
+	}
+	.line-wrop{
+		height:.62rem;
+	}
+	.information .title{
+		font-size:.184rem;
+	}
+	.icon-more img{
+		width:.14rem;
+	}
+}
+@media screen (min-width:464px) and (max-width:530px;){
+	img.pic{
+	height:1.32rem;
+}
+	.ds-m-des{
+		font-size:.18rem;
+	}
+	.bel-pic{
+		
+		height:1.36rem;
+	}
+	.box-ph{
+	
+		height:1.36rem;
+	}
+	.wtit{
+	width:1.68rem;
+	}
+	.h_m_pic {
+		left:63%;
+	}
+	.acttop{
+		margin-left:.09rem;
+	}
+	.regtop .fl{
+		font-size:.15rem;
+	}
+	.reg-detail{
+		font-size:.19rem;
+	}
+	.reg-btn{
+		font-size:.176rem;
+	}
+	.con{
+		height:.42rem;
+		line-height:.42rem;
+		font-size:.14rem;
+	}
+	.cen{
+		height:.6rem;
+		line-height:.6rem;
+		font-size:.165rem;
+	}
+	.hidimg{
+		padding-top:.13rem;
+	}
+	.reg-name img {
+		width:.48rem;
+		position: absolute;
+		left:35%;
+		top:25%;
+	}
+	.title span{
+		font-size:.23rem;
+		padding-top:.14rem;
+	}
+	.reg-des{
+		font-size:.167rem;
+		padding-top:.15rem;
+	}
+	.list-sign{
+		font-size:.179rem;
+	}
+	.teard{
+		font-size:.132rem;
+	}
+	.res{
+	font-size:.138rem;
+	}
+	.bol{
+		font-size:.156rem;
+	}
+	.lastlist{
+		font-size:.138rem;
+	}
+	.reg-section{
+		height:4rem;
+	}
+	img.sortimg{
+		width:.19rem;
+	}
+	.act-rule .span{
+		font-size:.145rem;
+	}
+	.lucky-head{
+		font-size:.135rem;
+	}
+	.rewards .re-right{
+		font-size:.154rem;
+	}
+	.rewards .re-left{
+		font-size:.154rem;
+	}
+	.ds-m-des{
+		font-size:.17rem;
+	}
+	.span{
+		font-size:.15rem;
+	}
+	.text-ind{
+		font-size:.174rem;
+	}
+	.rewards .re-coin{
+		font-size:.17rem;
+	}
+	.information figure>p{
+		font-size:.14rem;
+	}
+	#btn-login{
+	font-size:.175rem;
+	}
+	.act-fun{
+		margin-left:.1rem;
+	}
+	.rev-reg{
+		height:1.43rem;
+	}
+	.rev{
+		width:40%;
+	}
+	.li-left{
+		width:36%;
+		margin-left:.2rem;
+	}
+	.book_r_box dl dd{
+		color:#8c8c8c;
+		font-size:.15rem;
+		padding:.036rem 0;
+	}
+	.box-inda{
+		height:2.3rem;
+		overflow:hidden;
+	}
+	figure.box-inda{
+		padding-bottom:.1rem;
+	}
+	.book_r_box dl dt{
+		padding-bottom:.03rem;
+	}
+	.crosline span{
+	position:absolute;
+	top:-13px;
+	left:-2%;
+	}
+	.lisot .line-wrop a span{
+	left:49%;
+	}
+	.line-wrop a img{
+		margin-left:.2rem;
+	}
+	.niki-button{
+		font-size:.17rem;
+	}
+	.my_wrep .my_pic{
+	padding-top: .16rem;
+	}
+	.my_wrep h3{
+		font-size: .16rem;
+	}
+	.line-wrop{
+    width: 100%;
+	height:.6rem;
+    display:block;
+    clear: both;
+	border-bottom: 1px solid #eee;
+    }
+
+	
+	.reclaim strong{
+        font-size: .143rem;
+    }
+	.information .price strong {
+		font-size: .11rem;
+	}
+	figcaption, #tour .info, .lisot {
+		font-size: .1rem;
+	}	
+	figure>h2 {
+		font-size: .172rem;
+	}
+	
+	figure>p{
+		font-size: .12rem;
+	}
+    .lisot img.pic{
+    margin-right: 0.1rem;
+    }
+	.bala{
+    margin-right: 0.1rem;
+	height:1.73rem;
+    }
+	.information .small_title {
+	font-size:.147rem;
+	font-weight: normal;
+	padding: 0;	
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+    line-height: 0.26rem;
+}
+.lisot .line-wrop a span{
+	left:49%;
+}
+.emosha span{
+		font-size:.14rem;
+	}
+	.line-wrop{
+		height:.62rem;
+	}
+	.information .title{
+		font-size:.188rem;
+	}
+	.icon-more img{
+		width:.14rem;
+	}
+	
+	
+	
+}
+
+@media screen (min-width:530px) and (max-width:820px){
+	.bel-pic{
+		height:1.22rem;
+	}
+	.box-ph{
+		height:1.22rem;
+	}
+	.wtit{
+	width:1.78rem;
+	}
+	.acttop{
+		margin-left:.09rem;
+	}
+	.regtop .fl{
+		font-size:.15rem;
+	}
+	.reg-detail{
+		font-size:.19rem;
+	}
+	.reg-btn{
+		font-size:.176rem;
+	}
+	.con{
+		height:.42rem;
+		line-height:.42rem;
+		font-size:.14rem;
+	}
+	.cen{
+		height:.6rem;
+		line-height:.6rem;
+		font-size:.165rem;
+	}
+	.hidimg{
+		padding-top:.18rem;
+	}
+	.reg-name img {
+		width:.48rem;
+		position: absolute;
+		left:35%;
+		top:25%;
+	}
+	.title span{
+		font-size:.193rem;
+	}
+	.reg-des{
+		font-size:.17rem;
+		padding-top:.18rem;
+	}
+	.list-sign{
+		font-size:.179rem;
+	}
+	.teard{
+		font-size:.132rem;
+	}
+	.res{
+	font-size:.138rem;
+	}
+	.bol{
+		font-size:.156rem;
+	}
+	.lastlist{
+		font-size:.138rem;
+	}
+	.reg-section{
+		height:4rem;
+	}
+	img.sortimg{
+		width:.19rem;
+	}
+	.act-rule .span{
+		font-size:.145rem;
+	}
+	.lucky-head{
+		font-size:.135rem;
+	}
+	.rewards .re-right{
+		font-size:.154rem;
+	}
+	.rewards .re-left{
+		font-size:.154rem;
+	}
+	.ds-m-des{
+		font-size:.17rem;
+	}
+	.span{
+		font-size:.15rem;
+	}
+	.text-ind{
+		font-size:.174rem;
+	}
+	.rewards .re-coin{
+		font-size:.17rem;
+	}
+	.information figure>p{
+		font-size:.14rem;
+	}
+	#btn-login{
+	font-size:.175rem;
+	}
+	.act-fun{
+		margin-left:.1rem;
+	}
+	.rev-reg{
+		height:1.43rem;
+	}
+	.rev{
+		width:40%;
+	}
+	.li-left{
+		width:36%;
+		margin-left:.2rem;
+	}
+	.book_r_box dl dd{
+		color:#8c8c8c;
+		font-size:.15rem;
+		padding:.037rem 0;
+	}
+	.box-inda{
+		height:2.3rem;
+		overflow:hidden;
+	}
+	figure.box-inda{
+		padding-bottom:.1rem;
+	}
+	.book_r_box dl dt{
+		padding-bottom:.03rem;
+	}
+	.crosline span{
+	position:absolute;
+	top:-13px;
+	left:-2%;
+	}
+	.lisot .line-wrop a span{
+	left:49%;
+	}
+	.line-wrop a img{
+		margin-left:.2rem;
+	}
+	.niki-button{
+		font-size:.17rem;
+	}
+	.my_wrep .my_pic{
+	padding-top: .16rem;
+	}
+	.my_wrep h3{
+		font-size: .16rem;
+	}
+	.line-wrop{
+    width: 100%;
+	height:.6rem;
+    display:block;
+    clear: both;
+	border-bottom: 1px solid #eee;
+}
+	
+	.reclaim strong{
+        font-size: .143rem;
+    }
+	.information .price strong {
+		font-size: .11rem;
+	}
+	figcaption, #tour .info, .lisot {
+		font-size: .1rem;
+	}	
+	figure>h2 {
+		font-size: .172rem;
+	}
+	figure>p{
+		font-size: .12rem;
+	}
+    .lisot img.pic{
+    margin-right: 0.1rem;
+    }
+	.lisot img.bala{
+    margin-right: 0.1rem;
+    }
+	.information .small_title {
+	font-size:.147rem;
+	font-weight: normal;
+	padding: 0;	
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+    line-height: 0.26rem;
+}
+.lisot .line-wrop a span{
+	left:49%;
+}
+.emosha span{
+		font-size:.14rem;
+	}
+	.line-wrop{
+		height:.62rem;
+	}
+	.information .title{
+		font-size:.19rem;
+	}
+	.icon-more img{
+		width:.14rem;
+	}
+	
+}
+
+@media screen (min-width:820px){
+	.wtit{
+		width:1.6rem;
+	}
+	.acttop{
+		margin-left:.09rem;
+	}
+	.regtop .fl{
+		font-size:.15rem;
+	}
+	.reg-detail{
+		font-size:.19rem;
+	}
+	.reg-btn{
+		font-size:.176rem;
+	}
+	.con{
+		height:.42rem;
+		line-height:.42rem;
+		font-size:.14rem;
+	}
+	.cen{
+		height:.6rem;
+		line-height:.6rem;
+		font-size:.165rem;
+	}
+	.hidimg{
+		padding-top:.18rem;
+	}
+	.reg-name img {
+		width:.48rem;
+		position: absolute;
+		left:35%;
+		top:25%;
+	}
+	.title span{
+		font-size:.193rem;
+	}
+	.reg-des{
+		font-size:.167rem;
+		padding-top:.18rem;
+	}
+	.list-sign{
+		font-size:.179rem;
+	}
+	.teard{
+		font-size:.132rem;
+	}
+	.res{
+	font-size:.138rem;
+	}
+	.bol{
+		font-size:.156rem;
+	}
+	.lastlist{
+		font-size:.138rem;
+	}
+	.reg-section{
+		height:4rem;
+	}
+	img.sortimg{
+		width:.19rem;
+	}
+	.act-rule .span{
+		font-size:.145rem;
+	}
+	.lucky-head{
+		font-size:.135rem;
+	}
+	.rewards .re-right{
+		font-size:.154rem;
+	}
+	.rewards .re-left{
+		font-size:.154rem;
+	}
+	.ds-m-des{
+		font-size:.17rem;
+	}
+	.span{
+		font-size:.15rem;
+	}
+	.text-ind{
+		font-size:.174rem;
+	}
+	.rewards .re-coin{
+		font-size:.17rem;
+	}
+	.information figure>p{
+		font-size:.14rem;
+	}
+	#btn-login{
+	font-size:.175rem;
+	}
+	.act-fun{
+		margin-left:.1rem;
+	}
+	.rev-reg{
+		height:1.43rem;
+	}
+	.rev{
+		width:40%;
+	}
+	.li-left{
+		width:36%;
+		margin-left:.2rem;
+	}
+	.book_r_box dl dd{
+		color:#8c8c8c;
+		font-size:.15rem;
+		padding:.04rem 0;
+	}
+	.box-inda{
+		height:2rem;
+		overflow:hidden;
+	}
+	figure.box-inda{
+		padding-bottom:.1rem;
+	}
+	.book_r_box dl dt{
+		padding-bottom:.03rem;
+	}
+	.crosline span{
+	position:absolute;
+	top:-13px;
+	left:-2%;
+	}
+	.lisot .line-wrop a span{
+	left:49%;
+	}
+	.line-wrop a img{
+		margin-left:.2rem;
+	}
+	.niki-button{
+		font-size:.17rem;
+	}
+	.my_wrep .my_pic{
+	padding-top: .16rem;
+	}
+	.my_wrep h3{
+		font-size: .16rem;
+	}
+	.line-wrop{
+    width: 100%;
+	height:.6rem;
+    display:block;
+    clear: both;
+	border-bottom: 1px solid #eee;
+	}
+	.reclaim strong{
+        font-size: .143rem;
+    }
+	.information .price strong {
+		font-size: .11rem;
+	}
+	figcaption, #tour .info, .lisot {
+		font-size: .1rem;
+	}	
+	figure>h2 {
+		font-size: .172rem;
+	}
+	figure>p{
+		font-size: .12rem;
+	}
+    .lisot img.pic{
+    margin-right: 0.1rem;
+    }
+	 .lisot img.bala{
+    margin-right: 0.1rem;
+    }
+	.information .small_title {
+	font-size:.147rem;
+	font-weight: normal;
+	padding: 0;	
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+    line-height: 0.26rem;
+}
+.lisot .line-wrop a span{
+	left:49%;
+}
+.emosha span{
+		font-size:.14rem;
+	}
+	.line-wrop{
+		height:.62rem;
+	}
+	.information .title{
+		font-size:.194rem;
+	}
+	.icon-more img{
+		width:.14rem;
+	}
+	
+}
+
+/*China_Zhang*/
+.z_content{
+	background-color:#F7F6F3;
+	font-family: Arial,Verdana,'微软雅黑';
+	font-size: 14px;
+}
+.z_content h2{
+	height: 46px;
+	line-height: 46px;
+	background: #eeece8;
+	border-top: 1px solid #DCD9D5;
+	border-bottom: 1px solid #E9E7E3;
+	padding: 0 10px 0 15px;
+	color: #333;
+	font-weight: normal;
+	font-size: 14px;
+}
+.z_content ul{
+	padding: 0 10px 0 15px;
+}
+.z_content ul li {
+	height: 52px;
+	line-height: 52px;
+	border-bottom: 1px solid #E4E4E4;
+	color: #414141;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.z_hidden{
+	overflow:hidden;
+}
+.cen{
+	height:.72rem;
+	line-height:.72rem;
+}
+.article{
+	border:none;
+}
+#inhid{
+	display:none;
+}
+.blok{
+	width:.2rem;
+	height:.2rem;
+}

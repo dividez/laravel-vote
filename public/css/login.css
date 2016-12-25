@@ -1,0 +1,89 @@
+﻿
+		html,body{
+			width: 100%;
+			height: 100%;
+		}
+		body{
+			background: url(/dist/img/index_images/bg.png) center center no-repeat;
+			font-family: '微软雅黑';
+		}
+		.container{
+			height: 100%;
+		}
+		.main{
+			height: 100%;
+		}
+		.center{
+			width: 404px;
+			height: 448px;
+			padding:60px;
+			position: absolute;
+			left: 50%;
+			margin-left: -202px;
+			top:50%;
+			margin-top:-284px;
+			background: #fff;
+		}
+		.center .title{
+			font-size: 27px;
+			color:#636363;
+			letter-spacing: 4px;
+			text-align: center;
+			height: 60px;
+		}
+		.center .form-line{
+			position: relative;
+			height: 74px;
+		}
+		.center .form-line input{
+			height:44px;
+			width: 100%; 
+			padding-left:50px;
+		}
+		.center .form-line .btn{
+			height: 44px;
+			font-size: 20px;
+		}
+		.form-line .bg{
+			background: url(/dist/img/index_images/user.png) no-repeat 10px;
+			-webkit-background-size: 24px 28px;
+			background-size: 24px 28px;
+			color:#ccc;
+		}
+		.form-line .bg-pwd{
+			background: url(/dist/img/index_images/center.png) no-repeat 10px;
+			-webkit-background-size: 24px 28px;
+			background-size: 24px 28px;
+		}
+		.forgetPwd{/*#52a7fa*/
+			color:#fff;
+			text-align: center;
+			line-height: 20px;
+		}
+		.forgetPwd hr{
+			width: 60px;
+			display: inline-block;
+			vertical-align: middle;
+			margin:0 44px 0 0px;
+		}
+		.errorMsg{
+			padding:4px;
+			padding-left: 14px;
+			font-size: 14px;
+			color:#d22f4c;
+		}
+		.form{
+			display: none;
+		}
+		#form1{
+			display: block;
+		}
+		.updateOk{
+			width: 100%;
+			height: 120px;
+			background: url(/dist/img/index_images/success.png) center center no-repeat;
+		}
+		.form4{
+			text-align: center;
+			color:#fff;
+		}
